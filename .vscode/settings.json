@@ -7,6 +7,10 @@
         "latex",
         "plaintext",
         "python",
-        "html"
-    ]
+        "html",
+        "javascript"
+    ],
+    "terminal.integrated.fontSize":18,
+    "terminal.integrated.fontFamily": "Courier"
+
 }
