@@ -1,0 +1,8 @@
+globalScope{
+    bar = {code}
+}
+
+
+localScopeBar{
+    baz: {code}
+}
