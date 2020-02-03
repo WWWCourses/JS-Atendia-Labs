@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let strPrimitive = 'Abc';
+        let strObj = new String('abc');
+
+        console.log(`strPrimitive: ${typeof strPrimitive}`);
+        console.log(`strObj: ${typeof strObj}`);
+
+        // boxing
+        console.log( strPrimitive.toLowerCase() );
+        // is equivalent to:
+        console.log( (new String(strPrimitive)).toLowerCase() );
+
+        // TASK:
+        let str = 'abcdef';
+
+        // define function isIn(symbol, str), which returns:
+        // true - if symbol is in str, else return false
+
+        const isIn = function (symb, str) {
+            if(str.toLowerCase().indexOf(symb.toLowerCase()) === -1){
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+        console.log( isIn('C', str) ); // true
+
+
+    </script>
+</body>
+</html>

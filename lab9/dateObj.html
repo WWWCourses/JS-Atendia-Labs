@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date demos</title>
+</head>
+<body>
+
+    <script>
+        // функция, която връща текущите час, минута секунда във формат:'HH:MM:SS'.
+        let printCurrentTime = function(){
+            let now = new Date();
+            let hours = now.getHours();
+            let mins = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            console.log(`${hours}:${mins}:${seconds}`);
+        }
+
+        let test1 = function (iterCount) {
+            for (let i = 0; i < iterCount; i++) {
+
+            }
+        }
+        let test2 = function (iterCount) {
+            for (let i = 0; i < iterCount; i+=1) {
+
+            }
+        }
+
+        let getMiliseconds = function () {
+            return Date.now();
+        }
+
+        const iterCount = 1000000000;
+        // time test1
+        let beforeTest1 = getMiliseconds();
+        test1(iterCount);
+        let afterTest1 = getMiliseconds();
+        console.log(`test1 takes: ${afterTest1 - beforeTest1}`);
+
+        // time test2
+        let beforeTest2 = getMiliseconds();
+        test2(iterCount);
+        let afterTest2 = getMiliseconds();
+        console.log(`test2 takes: ${afterTest2 - beforeTest2}`);
+
+
+    </script>
+</body>
+</html>

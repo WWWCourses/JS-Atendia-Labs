@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Object Demo</title>
+</head>
+<body>
+    <a id="test" href="https://progressbg.net/" title="click to open">progressbg.net</a>
+
+    <script type="text/javascript">
+        console.log("The title Attribute node object:");
+        // get the A element object:
+        let aNode = document.querySelector('#test');
+
+        // get the title attribute object of aNode:
+        let aTitleObj = aNode.getAttributeNode('title');
+        console.dir( aTitleObj );
+
+        // but we can access the value of "titile" attribute directly by:
+        console.dir(aNode.title)
+    </script>
+</body>
+</html>
