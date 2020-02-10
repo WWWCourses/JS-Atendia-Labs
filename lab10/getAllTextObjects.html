@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    aaaaa
+    <p>p1</p>
+    bbb
+    <p>p2</p>
+
+    <script>
+        let body = document.body;
+
+        for (let i = 0; i < body.childNodes.length; i++) {
+            const element = body.childNodes[i];
+            if (element.nodeType === 3) {
+                console.log(element);
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -7,7 +7,6 @@
         "latex",
         "plaintext",
         "python",
-        "html",
         "javascript"
     ],
     "terminal.integrated.fontSize":18,

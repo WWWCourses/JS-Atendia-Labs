@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Elements</title>
+    <style>
+        footer li:nth-child(2){
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="userAge" value="100">
+    <ul>
+        <li id="l1"><b>Item1 in body</b></li>
+        <li class="item">Item2 in body</li>
+        <li class="item">Item3</li>
+    </ul>
+    <!-- <footer>
+        <ul>
+            <li><b>Item1</b></li>
+            <li>Item2 in footer</li>
+            <li>Item3</li>
+        </ul>
+    </footer> -->
+    <script>
+        // querySelectorAll
+        let liNodes = document.querySelectorAll('.item');
+        for (let i = 0; i < liNodes.length; i++) {
+            const element = liNodes[i];
+            console.log( element.remove() );
+
+        }
+
+        // querySelector()
+        // console.log( document.querySelector('footer li:nth-child(2)').innerText);
+        // console.log( document.querySelector('.item').innerText);
+
+
+
+        // use jQuery
+        // let liNodes = $('li');
+        // let l1Node = $('#l1');
+        // console.dir(liNodes);
+        // console.dir(l1Node);
+
+        // // get all li in footer only:
+        // let footer = document.getElementsByTagName('footer')[0];
+
+        // let liNodesInDocument = document.getElementsByTagName('li');
+        // console.dir(liNodesInDocument);
+
+        // let liNodesInFooter = footer.getElementsByTagName('li');
+        // console.dir(liNodesInFooter);
+        //
+        // console.log( document.getElementsByName('userAge')[0].value );
+
+        // get element using id as variable:
+        // console.log( l1.innerText );
+        // console.log( l1.innerHTML );
+        // console.log( l1.outerText );
+
+        //getElementById
+        console.dir( document.getElementById('l1').innerText );
+
+        // getElementsByClassName()
+        console.dir( document.getElementsByClassName('item')[0].innerText );
+
+
+
+        // traverse the DOM tree
+        // console.log( document.body.children[0].children[1].innerText );
+
+
+    </script>
+</body>
+</html>
