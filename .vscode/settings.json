@@ -10,6 +10,7 @@
         "javascript"
     ],
     "terminal.integrated.fontSize":18,
-    "terminal.integrated.fontFamily": "Courier"
+    "terminal.integrated.fontFamily": "Courier",
+    "editor.fontSize": 16
 
 }
