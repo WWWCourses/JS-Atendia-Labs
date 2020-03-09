@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM intro</title>
+    <style>
+        ul{
+            border: 2px solid red;
+        }
+        li{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="/reg.php">
+        <label>pass: <input type="password" name="pass"></label>
+        <div class="passError"></div>
+        <button class="btn">Send</button>
+    </form>
+
+
+    <script>
+        const passInput = document.querySelector('[name="pass"]');
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', function () {
+            // document.pre
+            console.log(passInput.value);
+        })
+
+
+
+    </script>
+</body>
+</html>

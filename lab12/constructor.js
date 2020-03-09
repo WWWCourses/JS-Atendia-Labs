@@ -3,11 +3,7 @@
 function Rectangle(width, height) {
     this.width = width;
     this.height = height;
-    this.greet = function () {
-        console.log('hi');
-    }
 }
-
 Rectangle.prototype.calcArea = function () {
     return this.width * this.height
 }
